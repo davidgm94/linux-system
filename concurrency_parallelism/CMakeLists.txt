@@ -1,5 +1,7 @@
-project(conc_parallelism)
+cmake_minimum_required(VERSION 3.15)
+project(concurrency C)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(SOURCE_FILES main.c)
-
-add_executable(conc_parallelism ${SOURCE_FILES})
+add_executable(concurrency main.c)
+target_compile_options(concurrency PRIVATE -W -fverbose-asm -save-temps)
