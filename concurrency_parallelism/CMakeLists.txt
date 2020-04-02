@@ -4,4 +4,4 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(concurrency main.c)
-target_compile_options(concurrency PRIVATE -W -fverbose-asm -save-temps)
+target_compile_options(concurrency PRIVATE -W -fverbose-asm)
