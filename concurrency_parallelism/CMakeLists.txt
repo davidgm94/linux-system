@@ -5,3 +5,4 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(concurrency main.c)
 target_compile_options(concurrency PRIVATE -W -fverbose-asm)
+target_link_libraries(concurrency pthread)
