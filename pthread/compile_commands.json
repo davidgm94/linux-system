@@ -1,8 +1,10 @@
 [
     {
         "arguments": [
-            "gcc",
+            "/usr/bin/clang-9",
             "-c",
+            "-g",
+            "-O3",
             "-o",
             "main.o",
             "main.c"

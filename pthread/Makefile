@@ -1,12 +1,16 @@
 # HEADERS = main.h headers.h
 
+CC=/usr/bin/clang-9
+CFLAGS=-g -O3
+LIBS=-pthread
+HEADERS= common.h
 default: main
 
 main.o: main.c $(HEADERS)
-	gcc -c main.c -o main.o
+	$(CC) $(CFLAGS) -c $< -o $@
 
 main: main.o
-	gcc main.o -o main
+	$(CC) main.o -o main $(CFLAGS) $(LIBS)
 
 clean:
 	-rm -f main.o
