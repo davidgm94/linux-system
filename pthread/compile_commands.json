@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-o",
+            "main.o",
+            "main.c"
+        ],
+        "directory": "/home/david/git/linux-system/pthread",
+        "file": "main.c"
+    }
+]
