@@ -1,7 +1,7 @@
 [
     {
         "arguments": [
-            "/usr/bin/clang-9",
+            "/usr/bin/clang-10",
             "-c",
             "-g",
             "-O3",

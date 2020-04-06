@@ -8,3 +8,8 @@ typedef uint8_t u8;
 typedef uint16_t u16;
 typedef uint32_t u32;
 typedef uint64_t u64;
+
+/***
+ * Macro to count the elements of an static array
+ * ***/
+#define COUNT_OF(__arr__) (((sizeof(__arr__)) / (sizeof(__arr__[0]))))
