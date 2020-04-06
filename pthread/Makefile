@@ -1,7 +1,7 @@
 # HEADERS = main.h headers.h
 
 CC=/usr/bin/clang-10
-CFLAGS=-g#-O3
+CFLAGS=-g -O2
 LIBS=-lpthread -lgcc
 LINKER_FLAGS=$(LIBS)
 HEADERS=common.h
